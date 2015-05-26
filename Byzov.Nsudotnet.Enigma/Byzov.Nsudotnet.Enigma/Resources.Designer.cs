@@ -22,14 +22,14 @@ namespace Byzov.Nsudotnet.Enigma {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Strings {
+    internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Strings() {
+        internal Resources() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Byzov.Nsudotnet.Enigma {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Byzov.Nsudotnet.Enigma.Strings", typeof(Strings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Byzov.Nsudotnet.Enigma.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,8 @@ namespace Byzov.Nsudotnet.Enigma {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Algorithm &quot;{0}&quot; not supported.Supported algorytms: AES, DES, RC2, Rijndael..
+        ///   Looks up a localized string similar to Algorithm &quot;{0}&quot; not supported.
+        ///Supported algorytms: AES, DES, RC2, Rijndael..
         /// </summary>
         internal static string AlgorithmNotSupportedMessage {
             get {
@@ -70,7 +71,9 @@ namespace Byzov.Nsudotnet.Enigma {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Command line argemunts for encrypt: encrypt inputFile algorithmName outputFile For decrypt: decrypt inputFile algorithmName key File outputfile Supported algorytms: AES, DES, RC2, Rijndael..
+        ///   Looks up a localized string similar to Command line argemunts for encrypt: encrypt inputFile algorithmName outputFile
+        ///For decrypt: decrypt inputFile algorithmName key File outputfile
+        ///Supported algorytms: AES, DES, RC2, Rijndael..
         /// </summary>
         internal static string ComandLineArgumentsMessage {
             get {

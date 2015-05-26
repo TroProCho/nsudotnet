@@ -13,13 +13,14 @@ namespace Byzov.Nsudotnet.Enigma
         {
             if (args.Length != NumberParametersForDecrypt && args.Length != NumberParametersForEncrypt)
             {
-                Console.WriteLine(Strings.ComandLineArgumentsMessage);
+                Console.WriteLine(Resources.ComandLineArgumentsMessage);
+                Console.Read();
                 return;
             }
             SupportedAlgorithms supportedAlgorithm;
             if (!SupportedAlgorithms.TryParse(args[2], true, out supportedAlgorithm))
             {
-                Console.Write(Strings.AlgorithmNotSupportedMessage, args[2]);
+                Console.Write(Resources.AlgorithmNotSupportedMessage, args[2]);
                 return;
             }
 
@@ -44,19 +45,19 @@ namespace Byzov.Nsudotnet.Enigma
 
                         default:
                             {
-                                Console.WriteLine(Strings.ComandLineArgumentsMessage);
+                                Console.WriteLine(Resources.ComandLineArgumentsMessage);
                                 return;
                             }
                     }
                 }
                 catch (KeyNotFoundException e)
                 {
-                    Console.WriteLine(Strings.FileNotKeyFileMessage, e.Filename);
+                    Console.WriteLine(Resources.FileNotKeyFileMessage, e.Filename);
                     return;
                 }
                 catch (FileNotFoundException e)
                 {
-                    Console.Out.WriteLine(Strings.FileNotFoundMessage, e.FileName);
+                    Console.Out.WriteLine(Resources.FileNotFoundMessage, e.FileName);
                     return;
                 }
             }

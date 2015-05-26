@@ -118,10 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AlgorithmNotSupportedMessage" xml:space="preserve">
-    <value>Algorithm "{0}" not supported.Supported algorytms: AES, DES, RC2, Rijndael.</value>
+    <value>Algorithm "{0}" not supported.&#x1F;
+Supported algorytms: AES, DES, RC2, Rijndael.</value>
   </data>
   <data name="ComandLineArgumentsMessage" xml:space="preserve">
-    <value>Command line argemunts for encrypt: encrypt inputFile algorithmName outputFile For decrypt: decrypt inputFile algorithmName key File outputfile Supported algorytms: AES, DES, RC2, Rijndael.</value>
+    <value>Command line argemunts for encrypt: encrypt inputFile algorithmName outputFile
+For decrypt: decrypt inputFile algorithmName key File outputfile
+Supported algorytms: AES, DES, RC2, Rijndael.</value>
   </data>
   <data name="FileNotFoundMessage" xml:space="preserve">
     <value>File {0} not found.</value>

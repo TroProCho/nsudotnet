@@ -9,7 +9,7 @@ namespace Byzov.Nsudotnet.Enigma
     {
         public static void Encrypt(string inputFile, SymmetricAlgorithm algorithm, string outputFile)
         {
-            string keyFilename = Path.ChangeExtension(inputFile, string.Concat(Strings.KeyFileExtenshion, Path.GetExtension(inputFile)));
+            string keyFilename = Path.ChangeExtension(inputFile, string.Concat(Resources.KeyFileExtenshion, Path.GetExtension(inputFile)));
             using (var keyFileStream = new FileStream(keyFilename, FileMode.Create, FileAccess.Write))
             {
                 using (var keyStreamWriter = new StreamWriter(keyFileStream))
