@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.IO;
 using System.Security.Cryptography;
 
@@ -6,11 +7,9 @@ namespace Byzov.Nsudotnet.Enigma
 {
     class Enigma
     {
-        private const string KeyFileExtenshion = ".key";
-
         public static void Encrypt(string inputFile, SymmetricAlgorithm algorithm, string outputFile)
         {
-            string keyFilename = Path.ChangeExtension(inputFile, string.Concat(KeyFileExtenshion, Path.GetExtension(inputFile)));
+            string keyFilename = Path.ChangeExtension(inputFile, string.Concat(Strings.KeyFileExtenshion, Path.GetExtension(inputFile)));
             using (var keyFileStream = new FileStream(keyFilename, FileMode.Create, FileAccess.Write))
             {
                 using (var keyStreamWriter = new StreamWriter(keyFileStream))

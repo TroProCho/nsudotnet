@@ -17,7 +17,5 @@ namespace Byzov.Nsudotnet.Enigma
         {
             Filename = filename;
         }
-
-        
     }
 }
