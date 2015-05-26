@@ -33,9 +33,9 @@ namespace NumberGuesser
         {
             _input = input ?? Console.In;
             _output = output ?? Console.Out;
-            _nickname = default (string);
-            _historyAnswer = default (List<int>);
-            _guessesNumber = default (int);
+            _nickname = "user";
+            _historyAnswer = null;
+            _guessesNumber = 0;
         }
 
         
