@@ -55,7 +55,7 @@ namespace NumberGuesser
                     _output.WriteLine(MoralSupport[(new Random()).Next(0, MoralSupport.Count())]);
                 }
                 string answer = _input.ReadLine();
-                int enteredNumber = default(int);
+                int enteredNumber = 0;
                 if (int.TryParse(answer, out enteredNumber))
                 {
                     if (enteredNumber == _guessesNumber)
